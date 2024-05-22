@@ -17,7 +17,7 @@ def Ashamane():
     row = 7
 
     client = gspread.authorize(creds)
-    sheet = client.open_by_key(os.environ['LOCAL']) #Local #Dev #Live
+    sheet = client.open_by_key(os.environ['LIVE']) #Local #Dev #Live
     sheet = sheet.worksheet("Ashamane's Fall")
 
     mogul = sheet.cell(2,12).value

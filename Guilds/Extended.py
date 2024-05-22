@@ -14,7 +14,7 @@ def Extended():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
     creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
     client = gspread.authorize(creds)
-    sheet = client.open_by_key(os.environ['LOCAL']) #Local #Dev #Live
+    sheet = client.open_by_key(os.environ['LIVE']) #Local #Dev #Live
     sheet = sheet.worksheet("Extended")
 
     guilds = [199066642, 467715881, 439520221, 200915262, 469001351, 439001941, 200912272, 202782692, 200875392, 437378721, 437956461, 439021421, 466689451, 437262641, 439157421, 199002432, 466295671, 466386371, 51433483, 438015331, 52083073, 466184131, 202672512, 203652452, 468022961, 467766291, 466419191, 203585612]

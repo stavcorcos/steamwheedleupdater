@@ -18,7 +18,7 @@ def CircleOfBlood():
     row = 7
 
     client = gspread.authorize(creds)
-    sheet = client.open_by_key(os.environ['LOCAL']) #Local #Dev #Live
+    sheet = client.open_by_key(os.environ['LIVE']) #Local #Dev #Live
     sheet = sheet.worksheet("Circle of Blood")
 
     mogul = sheet.cell(2,12).value

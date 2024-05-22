@@ -14,7 +14,7 @@ def Cartel():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
     creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
     client = gspread.authorize(creds)
-    sheet = client.open_by_key(os.environ['LOCAL']) #Local #Dev #Live
+    sheet = client.open_by_key(os.environ['LIVE']) #Local #Dev #Live
     sheet = sheet.worksheet("Steamwheedle")
 
     guilds = [203585612, 199066642, 467715881, 469001351, 439520221, 200915262, 439001941, 200912272, 200875392, 52083073, 437378721, 51433483, 437956461, 438015331, 439021421, 437262641, 439157421, 202782692, 466689451, 199002432, 468022961, 202672512, 466386371, 203652452, 466184131, 467766291, 466295671, 466419191]
