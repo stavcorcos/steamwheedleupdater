@@ -29,5 +29,6 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
           CREDENTIALS: ${{ secrets.CREDENTIALS }}
           LOCAL: ${{ secrets.LOCAL }}
+          LIVE: ${{ secrets.LIVE }}
 
         run: python main.py
