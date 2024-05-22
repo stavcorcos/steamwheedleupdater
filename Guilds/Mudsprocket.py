@@ -12,7 +12,7 @@ credentials = json.loads(os.environ['CREDENTIALS'])
 
 def Mudsprocket():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name(credentials, scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
     guild = requests.get("https://api.warcraftrumble.gg/guild/439001941").json()
     lastupdated = date.today().strftime("%d %B %Y")
     row = 7

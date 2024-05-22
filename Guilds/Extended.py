@@ -12,7 +12,7 @@ credentials = json.loads(os.environ['CREDENTIALS'])
 
 def Extended():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name(credentials, scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
     client = gspread.authorize(creds)
     sheet = client.open_by_key(os['LOCAL']) #Local #Dev #Live
     sheet = sheet.worksheet("Extended")
