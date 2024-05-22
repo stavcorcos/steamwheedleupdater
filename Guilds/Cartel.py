@@ -9,7 +9,7 @@ import subprocess
 import json
 load_dotenv()
 password = os.environ['PASSWORD']
-credentials = os.environ['CREDENTIALS']
+credentials = json.loads(os.environ['CREDENTIALS'])
 
 def Cartel():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
