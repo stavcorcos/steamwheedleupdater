@@ -52,5 +52,6 @@ def Smokywood():
         for i, val in enumerate([link, "", skulls, collection, str(honor), "", "", lastupdated]):
             if val != "":
                 cell_list[i].value = val
-        sheet.update_cells(cell_list, value_input_option='USER_ENTERED')
+        if name != "Barritus":
+            sheet.update_cells(cell_list, value_input_option='USER_ENTERED')
         row += 1
