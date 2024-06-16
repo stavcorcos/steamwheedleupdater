@@ -54,6 +54,7 @@ def Faldir():
         collection = player['data']["level"]
         honor = player['data']["leaderAHonor"] + player['data']["leaderBHonor"] + player['data']["leaderCHonor"]
         cell_list = sheet.range(f"B{str(row)}:J{str(row)}")
+        time.sleep(5)
         for i, val in enumerate([link, "", skulls, collection, str(honor), "", "", "", lastupdated]):
             if val != "":
                 cell_list[i].value = val
