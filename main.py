@@ -2,6 +2,7 @@ import Guilds.Ashamane as Ashamane
 import Guilds.Everlook as Everlook
 import Guilds.Faldir as Faldir
 import Guilds.Fuselight as Fuselight
+import Guilds.Gadgetzan as Gadgetzan
 import Guilds.Gallywix as Gallywix
 import Guilds.Mudsprocket as Mudsprocket
 import Guilds.Ratchet as Ratchet
@@ -25,6 +26,10 @@ print("Faldir Done")
 time.sleep(10)
 print("Fuselight Running")
 Fuselight.Fuselight()
+print("Fuselight Done")
+time.sleep(10)
+print("Gadgetzan Running")
+Gadgetzan.Gadgetzan()
 print("Fuselight Done")
 time.sleep(10)
 """ print("Gallywix Running")
