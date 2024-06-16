@@ -13,7 +13,7 @@ credentials = json.loads(os.environ['CREDENTIALS'])
 def Fuselight():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
     creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
-    guild = requests.get("https://api.warcraftrumble.gg/guild/439157421").json()
+    guild = requests.get("https://github.com/Gryphin/The-Sheet/blob/main/fuselight").json()
     lastupdated = date.today().strftime("%d %B %Y")
     row = 7
 
