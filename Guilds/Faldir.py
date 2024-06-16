@@ -48,7 +48,7 @@ def Faldir():
         id = key["id"]
         name = key["name"]
         player = requests.get(f"https://api.warcraftrumble.gg/player/{id}").json()
-        time.sleep(10)
+        time.sleep(20)
         link = f"=HYPERLINK(\"https://warcraftrumble.gg/player/{id}\", \"{name}\")"
         skulls = player['data']["skulls"]
         collection = player['data']["level"]
