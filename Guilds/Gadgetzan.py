@@ -10,10 +10,10 @@ load_dotenv()
 password = os.environ['PASSWORD']
 credentials = json.loads(os.environ['CREDENTIALS'])
 
-def Faldir():
+def Gadgetzan():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
     creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
-    guild = requests.get("https://warcraftrumble.gg/guilds/437378721").json()
+    guild = requests.get("https://api.warcraftrumble.gg/guild/437378721").json()
     lastupdated = date.today().strftime("%d %B %Y")
     row = 7
 
