@@ -13,7 +13,7 @@ credentials = json.loads(os.environ['CREDENTIALS'])
 def Ashamane():
     scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
     creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
-    guild = requests.get("https://api.warcraftrumble.gg/guild/51433483").json()
+    guild = requests.get("https://api.warcraftrumble.gg/guild/204614832").json()
     lastupdated = date.today().strftime("%d %B %Y")
     row = 7
 
